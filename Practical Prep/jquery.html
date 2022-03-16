@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="click">Change colour of h1 tag when u click it.</h1>
+    <p id="dbclick">Change colour of p tag when u double click it.</p>
+    <h1 id="hover">Change colour of h1 tag when u hover over it.</h1>
+    <p id="mouseenter">Change colour of p tag when mouse enters it.</p>
+    <h1 id="away">Change colour of h1 tag when mouse moves away.</h1>
+    <script src="jquery.js"></script>
+    <script>
+            $('#click').click(function() {
+                $(this).css('color', 'blue');
+            });
+
+            $('#dbclick').dblclick(function() {
+                $(this).css('color', 'blue');
+            });
+
+            $('#hover').hover(function() {
+                $(this).css('color', 'blue');
+            });
+
+            $('#mouseenter').mouseenter(function() {
+                $(this).css('color', 'blue');
+            });
+
+            $('#away').mouseleave(function() {
+                $(this).css('color', 'blue');
+            });
+    </script>
+</body>
+</html>
