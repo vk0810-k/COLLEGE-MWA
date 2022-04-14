@@ -12,19 +12,12 @@
 
 <body>
     <div class="container">
-        <form action="http://localhost/College%20MWA/PRACTICAL/PRAC_06_LOGIN_AND_REGISTRATION/login.php" name="myform" method="get">
+        <form action="http://localhost/COLLEGE%20-%20MWA/PRACTICAL/PRAC_06_LOGIN_AND_REGISTRATION/login.php" name="myform" method="post">
             <h1 style="text-align: center">Login Page</h1>
             <label for="email">Email address:</label>
             <input pattern="^[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\.[A-Za-z]{2,4}$" type="email" name="email" required /> <br />
             <label for="password">Password: </label><br>
             <input type="password" name="password" id="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required><br>
-            <div id="message">
-                <h3>Password must contain the following:</h3>
-                <p id="letter" class="invalid">A <b>lowercase</b> letter</p>
-                <p id="capital" class="invalid">A <b>capital (uppercase)</b> letter</p>
-                <p id="number" class="invalid">A <b>number</b></p>
-                <p id="length" class="invalid">Minimum <b>8 characters</b></p>
-            </div>
             <input type="submit" value="SUBMIT" onclick="submitFunction()">
         </form>
     </div>

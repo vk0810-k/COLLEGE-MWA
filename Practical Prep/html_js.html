@@ -21,21 +21,35 @@
     <input type="password" name="password" id="pass">
     <br>
 
-    <p id="demo"></p>
 
     <button type="submit" value="Submit" onclick="countpassword()">Submit</button>
     <button type="cancel" value="Cancel" onclick="check()">Cancel</button>
 
-    <script>
-        function countpassword() {
-            var pass = document.getElementById("pass").value;
-            var length = pass.length;
-            document.getElementById("demo").innerHTML = "Password length: " + length;
-        }
+    <h1 id="demo">
 
-        function check() {
+    <p id="result"></p>
 
+    <script src="jquery.js"></script>
+    <script type="text/javascript">
+        function countpassword()
+        {
+            var t1=document.getElementById("pass").value;
+            document.getElementById("demo").innerHTML="The lenght of data = " + t1.length;
         }
+        $(document).ready(function check()
+        {
+            $('input[type="checkbox"]').click(function()
+            {
+                if($(this).is(":checked"))
+                    {
+                        $css("<span style='background-color:red'>");
+                    }
+                    else if($(this).is(":not(:checked)"))
+                    {
+                        $("#result").html("Checkbox is unchecked.");
+                    }
+            });
+        });
     </script>
 </body>
 </html>
