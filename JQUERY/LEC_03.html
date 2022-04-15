@@ -136,36 +136,36 @@ $(document).ready(function(){
 </html> -->
 
 
-<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Working with Select</title>
-	<style>
-		p {
-			color: red;
-			margin: 4px;
-		}
-		b {
-			color: blue;
-		}
-	</style>
-</head>
-<body>
-	<select id="single">
-		<option>Single</option>
-		<option>Double</option>
-		<option>Triple</option>
-	</select>
-	<script>
-		function displayVals()
-		{
-			var singleValues = $("#single").val();
-			$("p").html("<b>Value</b>" + singleValues);
-		}
-		$("select").change(displayVals);
-		displayVals();
-	</script>
-</body>
-</html>
+<!DOCTYPE html>    
+<html lang="en">    
+<head>    
+
+<title>val demo</title>    
+  <style>    
+  p {    
+    color: red;    
+    margin: 4px;    
+  }    
+  b {    
+    color: blue;    
+  }    
+  </style>    
+  <script src="jquery-3.6.0.js"></script>    
+</head>    
+<body>    
+
+<select id="single">    
+  <option>Single</option>    
+  <option>Double</option>    
+ <option>Triple</option>    
+</select>    
+<script>    
+function displayVals() {    
+  var singleValues = $( "#single" ).val();    
+  $( "p" ).html( "<b>Value:</b> " + singleValues);    
+}    
+$( "select" ).change( displayVals );    
+displayVals();    
+</script>    
+</body>    
+</html> 
