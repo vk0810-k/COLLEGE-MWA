@@ -286,7 +286,7 @@ $(document).ready(function(){
  </body>
 </html> -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
  <title>Bootstrap Grid Example</title>
@@ -309,5 +309,61 @@ $(document).ready(function(){
     <div class="col-md-8 bg-danger offset-2 a">.col-md-8</div>
 </div>
  </div>
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>find</title>
+	<style>
+		.main * 
+		{
+			display: block;
+			font-size: 20px;
+			position: relative;
+			border: 2px solid black;
+			color: black;
+			padding: 10px;
+			margin: 17px;
+		}
+	</style>
+	<script src="jquery.js"></script>
+	<script>
+		function fun()
+		{
+			$(document).ready(function()
+			{
+				$("#div1").find("ul").css({"color": "blue","font-size" : "30px", "border": "6px dashed blue"});
+			});
+		};
+	</script>
+</head>
+<body class="main">
+
+    Body
+
+    <div id="div1">div 1
+
+        <div>div 2
+
+            <h2>Heading 2
+
+                <ul>ul
+
+                    <p>Para Element</p>
+
+                </ul>
+
+            </h2>
+
+        </div>
+
+    </div>
+
+
+
+    <button onclick="fun()"> Click Me </button>
+
 </body>
 </html>
