@@ -213,31 +213,29 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>AJAX</title>
-</head>
-<script src="jquery.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 <script>
-	$(document).ready(function()
-	{
-		$("button").click(function()
-		{
-			jQuery.ajax
-			({
-				url:'test.html',
-				success:function(data)
-				{
-					$(#para).html(data);
-				}
-			});
-		});
-	});
+$(document).ready(function(){
+  $("button").click(function(){
+jQuery.ajax({
+url: 'test.html',
+type: 'GET',
+  success: function(data) {
+    $("#para").html(data);              
+  }
+});
+  });
+});
 </script>
+</head>
 <body>
-	<h3>This is an exmaple of using the jQuery's AJAX() methid.</h3>
-	<h4>CLick the following button to see the effect.</h4>
-	<button>CLick me</button>
-	<p id="para"></p>
+
+<h3> This is an example of using the jQuery's ajax() method. </h3>
+<h4> Click the following button to see the effect. </h4>
+<button> Click me </button>
+<p id = "para"></p>
+
 </body>
 </html>
+
+ 
