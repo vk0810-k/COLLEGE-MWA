@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script src="jquery.js"></script>
+    <p>Number:<input type="number" id="num1"></p>
+    <button>Click</button>
+    <script>
+        $(document).ready(function() 
+        {
+            $("button").click(function() 
+            {
+              var x = document.getElementById('num1').value;
+              document.write("The Order is::\n")
+              for (var i = 1; i <= x; i++) 
+              {
+                  document.write(i);
+                  document. write("\n");
+                  document. write("\n");
+                  if(i%3 == 0)
+                  {
+                      document.write("Hi");
+                  }
+                  if(i%5 == 0)
+                  {
+                      document.write("Hello");
+                  }
+                  else if(i%3 == 0 && i%5 == 0)
+                  {
+                      document.write("Hi Hello");
+                  }
+            }
+           
+          });
+      });
+      </script>
+</body>
+</html>
