@@ -312,7 +312,7 @@ $(document).ready(function(){
 </body>
 </html> -->
 
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html>
 <head>
 	<title>find</title>
@@ -365,5 +365,56 @@ $(document).ready(function(){
 
     <button onclick="fun()"> Click Me </button>
 
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<title>Hover Demo</title>
+<style>
+	ul
+	{
+		margin-left: 20px;
+		color:  blue;
+	}
+	li
+	{
+		cursor: default;
+	}
+	span
+	{
+		color: red;
+	}
+</style>
+<script src="jquery.js"></script>
+<body>
+	<h1>mouse hover function</h1>
+	<ul>
+		<li>Milk</li>
+		<li>Bread</li>
+		<li class="fade">Chips</li>
+		<li class="fade">Socks</li>
+	</ul>
+	<script>
+	$("li").hover(
+		function()
+		{
+			$(this).append($("<span>***</span>"));
+		},
+		function()
+		{
+			$(this).find("span").last().remove();
+		});
+	$("li.fade").hover(function()
+	{
+		$(this).fadeOut(100);
+		$(this).fadeIn(500);
+	})
+</script>
 </body>
 </html>
